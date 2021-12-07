@@ -288,7 +288,7 @@ let result3 = text2.substring(2, 10);
 console.log(result3);
 
 
-class car {
+class car{
     constructor(brand){
         console.log("Brand of the car is ", brand);}
 }
