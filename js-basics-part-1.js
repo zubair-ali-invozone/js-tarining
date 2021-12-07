@@ -198,3 +198,103 @@ const keys = fruits12.keys();
 for (let i of keys) {
     console.log("Key is ", i);
 }
+
+// ---- Array forEach ----
+console.log("---- Array forEach ----");
+const arr1 = [1, 2, 3, 4, 5];
+console.log(arr1);
+arr1.forEach((item, index) => {
+    console.log("This is item ", item);
+    console.log("This is index ", index);
+});
+
+// ---- Array map ----
+console.log("---- Array map ----");
+const numbers = [4, 9, 16, 25];
+console.log(numbers);
+const newArr = numbers.map(Math.sqrt)
+console.log(newArr);
+
+// ---- Array map other----
+console.log("---- Array map other----");
+const numbers1 = [4, 9, 16, 25];
+console.log(numbers1);
+const newArr1 = numbers1.map((item, index) => {
+    return item + 1;
+})
+console.log(newArr1);
+
+// ---- Array filter ----
+console.log("---- Array filter ----");
+const ages2 = [32, 33, 16, 40];
+console.log(ages2);
+const result2 = ages2.filter((item, index) => {
+    return item > 30;
+});
+console.log(result2);
+
+// ---- Array reduce ----
+console.log("---- Array reduce ----");
+const numbers3 = [175, 50, 25];
+console.log(numbers3);
+const reduceArr = numbers3.reduce((accumlator, currentValue) => {
+    console.log("accumulator is ", accumlator);
+    return accumlator + currentValue;
+});
+console.log(reduceArr);
+
+// ---- Array reduce right ----
+console.log("---- Array reduce right ----");
+const numbers4 = [175, 50, 25];
+console.log(numbers4);
+const reduceRight = numbers4.reduceRight((accumulator, currentValue) => {
+    console.log("accumulator is ", accumulator);
+    return accumulator - currentValue;
+})
+console.log(reduceRight);
+
+// ---- Array every ----
+console.log("---- Array every ----");
+const numbers5 = [32, 33, 16, 40];
+console.log(numbers5);
+const everyArr = numbers5.every((item) => { // returns true if every element is true according to condition.
+    // return item + 1 === 33; // false
+    return item > 30 // false
+})
+console.log(everyArr);
+
+// ---- Array some ----
+console.log("---- Array some ----");
+const numbers6 = [3, 10, 18, 20];
+console.log(numbers6);
+const someArr = numbers6.some((item) => { // returns true if any value matches the condition
+    // return item === 3;
+    return item > 18;
+});
+console.log(someArr);
+
+// ---- String slice ----
+console.log("---- Array some ----");
+let text1 = "This is the text!";
+console.log(text1);
+let result1 = text1.slice(5, 10);
+console.log(result1);
+
+// ---- String substring ----
+console.log("---- Array substring ----");
+let text2 = "Hello world!";
+console.log(text2);
+let result3 = text2.substring(2, 10);
+console.log(result3);
+
+
+class car {
+    constructor(brand){
+        console.log("Brand of the car is ", brand);}
+}
+
+mycar = new car("Honda");
+
+
+
+
