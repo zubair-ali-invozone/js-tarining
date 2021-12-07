@@ -117,6 +117,7 @@ const removed = fruits3.shift();
 console.log("Removed element is ", removed);
 
 // ---- Array Unshift ----
+console.log("---- Array Unshift ----");
 const fruits4 = ["Banana", "Orange", "Apple", "Mango"];
 console.log(fruits4);
 fruits4.unshift("Lemon","Pineapple");
