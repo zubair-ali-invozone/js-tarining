@@ -294,7 +294,3 @@ class car{
 }
 
 mycar = new car("Honda");
-
-
-
-
