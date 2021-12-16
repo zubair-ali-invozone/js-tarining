@@ -23,7 +23,7 @@ function AddTodo(props) {
             <div>
                 <label className="">Title</label>
                 <br/>
-                <textarea cols="30" rows="10" onChange={(e)=> setTodo(e.target.value)}></textarea>
+                <textarea cols="30" rows="10" onChange={(e)=> { setTodo(e.target.value); setTodoMsg(false); }}></textarea>
                 <br/>
                 <button className="save-btn" onClick={saveTodo}>Save</button>
             </div>
